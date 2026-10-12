@@ -1,0 +1,56 @@
+let l=10;
+var l1=9;
+const l2=1;
+
+console.log(l1);
+// let my-name="abc"; // Invalid identifier due to hyphen
+// let my#name="abc"; // Invalid identifier due to special character
+// let my@name="abc"; // Invalid identifier due to special character
+// let my name="abc"; // Valid identifier
+// let my!name="abc"; // Invalid identifier due to special character
+
+let \u0061bc="abc"; // Valid identifier using Unicode escape sequence
+let café = "Unicode letter é";
+let 变量 = "Chinese characters";
+let \u0041 = "Unicode escape for A";
+let \u005f = "Unicode escape for _";
+
+let _validName="abc"; // Valid identifier
+let $validName="abc"; // Valid identifier
+// let 2validName="abc"; // Invalid identifier due to starting with a number
+let validName2="abc"; // Valid identifier
+// let function =3; // Invalid identifier because 'function' is a reserved keyword
+// let Function = "invalid"; but it actually works. Function is a built-in name, not a reserved word
+// let function = "abc"; // Valid identifier, but not recommended to use reserved keywords
+
+// 1. camelCase (standard for JS variables and functions)
+let userName = "camelCase";
+let totalPrice = 99.99;
+let isLoggedIn = true;
+let password = "passcode123";
+
+// 2. PascalCase (standard for JS classes and constructors)
+let UserProfile = "PascalCase";
+let ShoppingCart = "class name style";
+function Person() { return "constructor"; }
+
+// 3. snake_case (underscore separated)
+let user_name = "snake_case";
+let total_price = 49.99;
+let is_logged_in = false;
+let is_available = true;
+
+// 4. SCREAMING_SNAKE_CASE (constants)
+const MAX_SIZE = 100;
+const API_KEY = "abc123";
+const DATABASE_URL = "localhost";
+const URL = "https://example.com";
+
+
+for(let a=1; a<5; a++){
+    print();
+}
+
+function print(){
+    console.log("Hi!");
+}
